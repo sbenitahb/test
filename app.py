@@ -15,7 +15,7 @@ def hello():
 	else:
 		return "Error authenticating!!!"
 		
-@app.route("/new")
+@app.route("/new", methods=["GET","POST","DELETE"])
 def hello_new():
 	return "Hello there!!!"
 
